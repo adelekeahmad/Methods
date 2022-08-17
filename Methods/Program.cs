@@ -9,9 +9,33 @@ class Program
         //its task is to say hi to the user.
 
         Console.WriteLine(Cube(5));
-        
+        //if Statement
+        bool isMale = false;
+        bool isDark = true;
+        bool isNigerian = true;
+        bool isUite = true;
+        bool isAgesite = true;
+        if (isMale && isDark && isNigerian)
+        {
+            Console.WriteLine("You are male, dark in complexion and are a Nigerian.");
+        }
+        else
+        {
+            Console.WriteLine("You are female.");    
+        }
+        if (isAgesite || isUite)
+        {
+            Console.WriteLine("You are an alumnus of University of ibadan \nand You studied agricultural economic");
+        }
+        else if (!isAgesite && isMale || !isUite)
+        {
+            Console.WriteLine("Sorry, we observed that you are a male prospective student \ntrying to gain admittance to what department?");
+        }
+        else
+        {
+            Console.WriteLine("You are a prospective student");
+        }
         Console.ReadLine();
-
     }
     static void SayHi(string name, int age)
     {
