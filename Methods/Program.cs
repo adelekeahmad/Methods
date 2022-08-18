@@ -9,6 +9,7 @@ class Program
         //its task is to say hi to the user.
 
         Console.WriteLine(Cube(5));
+        Console.WriteLine(MaxVal(5, 10, 15));
         //if Statement
         bool isMale = false;
         bool isDark = true;
@@ -46,6 +47,27 @@ class Program
     {
         int result = num * num * num;
         return result;
+    }
+    //If Statement for Comparison
+    //Here, I wanna create a method for comparison between two numbers
+    //N.B: "==" means comparison between two numbers while "=" means assignment operator.
+    static int MaxVal(int numero1, int numero2, int numero3)
+    {
+        int result;
+        if (numero1 >= numero2 && numero1 >= numero3)
+        {
+            result = numero1;
+        }
+        else if (numero2 >= numero1 && numero2 >= numero3)
+        {
+            result = numero2;
+        }
+        else 
+        {
+            result = numero3;
+        }
+        return result;
+
     }
 }
 
